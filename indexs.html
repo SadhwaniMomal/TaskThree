@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskThree</title>
+    <style>
+        .container {
+            position: relative;
+            margin: 300px 300px;
+        }
+
+        .image-overlay {
+            background-color: rgb(20, 183, 220);
+            color: aliceblue;
+            font-family: serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .container .image-overlay {
+            width: 50%;
+            height: 99%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+            cursor: pointer;
+            /* border-radius: 15px; */
+        }
+
+        .container:hover .image-overlay {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img.jpg" alt="image">
+        <div class="image-overlay">
+            <h1>I am Image in Webpage</h1>
+        </div>
+    </div>
+</body>
+
+</html>
